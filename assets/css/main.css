@@ -2,12 +2,20 @@ html, body{
     height:100%;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header{
-    max-width: 100%;
-    min-height: 150px;
-    height: 60%;
-    background: url("./../img/cover_photo.jpg") no-repeat;
-    background-position: center;
+    padding-top:2.5%;
+    height:80%;
+    background: transparent url("./../img/cover_photo.jpg") no-repeat center center / cover;
+}
+
+div.dots{
+    height:50px;
+    background: transparent url("./../img/spacedDot.png") repeat-x top center;
+    background-size:2%;
 }
 
 #scientificStudiesCol img{
