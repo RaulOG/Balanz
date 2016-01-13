@@ -2,21 +2,26 @@ html, body{
     height:100%;
 }
 
+.content-fluid{
+    overflow:hidden;
+    overflow-y:auto;
+}
+
 body{
-    overflow-x: hidden;
+
 }
 
 header{
     padding-top:2.5%;
     height:80%;
-    background: transparent url("./../img/cover_photo.jpg") no-repeat center center / cover;
+    background: transparent url("./../img/cover_dotedphoto.jpg") no-repeat 50% 15% / cover;
 }
 
-div.dots{
+/*div.dots{
     height:50px;
     background: transparent url("./../img/spacedDot.png") repeat-x top center;
     background-size:2%;
-}
+}*/
 
 #scientificStudiesCol img{
     width:300px;
