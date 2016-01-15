@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Anton;
+    src: url("./../fonts/Anton.ttf");
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url("./../fonts/Lobster_1.0_.otf");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("./../fonts/raleway_thin.otf");
+}
+
+@font-face {
+    font-family: Georgia;
+    src: url("./../fonts/Georgia.ttf");
+}

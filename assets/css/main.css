@@ -1,5 +1,22 @@
 html, body{
     height:100%;
+    font-size:2px;
+}
+
+@media only screen and (min-width:768px){
+    html, body {
+        font-size: 3px;
+    }
+
+    .subTitle{
+        width:50%;
+    }
+}
+
+@media only screen and (min-width:992px){
+    html, body {
+        font-size: 4px;
+    }
 }
 
 .content-fluid{
@@ -12,16 +29,33 @@ body{
 }
 
 header{
+    position:relative;
     height:100%;
-    min-height: 200px;
-    background: transparent url("./../img/cover_dotedphoto.jpg") no-repeat scroll 50% 50% / cover;
+    min-height:500px;
+    background: transparent url("./../img/cover_photo.jpg") no-repeat scroll 50% 50% / cover;
 }
 
-/*div.dots{
-    height:50px;
-    background: transparent url("./../img/spacedDot.png") repeat-x top center;
-    background-size:2%;
-}*/
+div.ft-mainTitle{
+    padding-top:20rem;
+    padding-right:5rem;
+}
+
+div.subTitle .start_today{
+    display:inline-block;
+    padding:1rem 10rem;
+    margin-top:5rem;
+    border:1px solid white;
+    color:white;
+}
+
+.dots{
+    position:absolute;
+    margin-top:30px;
+    height:5rem;
+    width:100%;
+    background: transparent url("./../img/spacedDot.png") repeat-x top;
+    background-size:10rem;
+}
 
 #scientificStudiesCol img{
     width:300px;
@@ -41,3 +75,68 @@ header{
     height:100%;
     background: transparent url("./assets/img/cover_photo.jpg") repeat fixed 0% 0% / cover
 }*/
+
+
+
+/*********** FONTS DEFINITION ************/
+
+.ft-mainTitle {
+    text-align:right;
+    font-family:Anton;
+    color:black;
+    font-size:19rem;
+}
+
+.subTitle{
+    position:absolute;
+    padding:0rem 12rem;
+    bottom:20rem;
+    font-family:Anton;
+    color:black;
+    font-size:12rem;
+}
+
+.column-title{
+    font-family:Lobster;
+    color:black;
+    font-size:36px;
+}
+
+.mainColumn-title{
+    font-family:Raleway;
+    font-weight:bold;
+    color:red;
+    font-size:36px;
+}
+
+.mainColumn-content{
+    font-family:Georgia;
+    color:darkgrey;
+    font-size:36px;
+}
+
+.sideColumn-title{
+    font-family:Raleway;
+    font-weight:bold;
+    color:red;
+    font-size:24px;
+}
+
+.sideColumn-content{
+    font-family:Georgia;
+    color:darkgrey;
+    font-size:24px;
+}
+
+.extraColumn-title{
+    font-family: Raleway;
+    font-weight:bold;
+    color:red;
+    font-size:20px;
+}
+
+.extraColumn-content{
+    font-family:Georgia;
+    color:darkgrey;
+    font-size:20px;
+}
