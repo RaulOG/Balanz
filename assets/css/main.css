@@ -16,7 +16,10 @@ html, body{
     
     .subTitle { width: 50%; }
     
-    .content, .row, .row>div{ height: 100%; }
+    .content, .row, .row>div{
+    	height: 100%;
+    	overflow: hidden;
+    }
 }
 
 @media only screen and (min-width:992px){
