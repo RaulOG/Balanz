@@ -1,142 +1,162 @@
+/********************************************************/
+/*                                                      */
+/*          ROOT PROPERTIES AND MEDIA QUERIES           */
+/*                                                      */
+/********************************************************/
+
 html, body{
-    height:100%;
-    font-size:2px;
+    height: 100%;
+    font-size: 2px;
+    background-color: lightgrey;
 }
 
 @media only screen and (min-width:768px){
-    html, body {
-        font-size: 3px;
-    }
-
-    .subTitle{
-        width:50%;
-    }
+	
+    html, body { font-size: 3px; }
+    
+    .subTitle { width: 50%; }
+    
+    .content, .row, .row>div{ height: 100%; }
 }
 
 @media only screen and (min-width:992px){
-    html, body {
-        font-size: 4px;
-    }
+    html, body { font-size: 4px; }
 }
 
-.content-fluid{
-    overflow:hidden;
-    overflow-y:auto;
-}
-
-body{
-
-}
+/********************************************************/
+/*                                                      */
+/*                      HEADER                          */
+/*                                                      */
+/********************************************************/
 
 header{
-    position:relative;
-    height:100%;
-    min-height:500px;
+    position: relative;
+    height: 100%;
+    min-height: 500px;
     background: transparent url("./../img/cover_photo.jpg") no-repeat scroll 50% 50% / cover;
 }
 
+.dots{
+    position: absolute;
+    margin-top: 30px;
+    height: 5rem;
+    width: 100%;
+    background: transparent url("./../img/spacedDot.png") repeat-x top;
+    background-size: 10rem;
+}
+
 div.ft-mainTitle{
-    padding-top:20rem;
-    padding-right:5rem;
+    padding-top: 20rem;
+    padding-right: 4rem;
 }
 
 div.subTitle .start_today{
-    display:inline-block;
-    padding:1rem 10rem;
-    margin-top:5rem;
-    border:1px solid white;
-    color:white;
+    display: inline-block;
+    padding: 1rem 10rem;
+    margin-top: 5rem;
+    border: 1px solid white;
+    color: white;
 }
 
-.dots{
-    position:absolute;
-    margin-top:30px;
-    height:5rem;
-    width:100%;
-    background: transparent url("./../img/spacedDot.png") repeat-x top;
-    background-size:10rem;
+
+/********************************************************/
+/*                                                      */
+/*                      CONTENT                         */
+/*                                                      */
+/********************************************************/
+
+.content {
+    margin: 0 auto;
+    padding-top: 15rem;
+    text-align: center;	
+    max-width: 992px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
-#scientificStudiesCol img{
-    width:300px;
-    height:300px;
+.content img {
+    width: 100%;
+    height: auto;
 }
 
-#tipsCol img{
-    width:150px;
-    height:150px;
+img.orange_dot{
+	height: 8rem;
+	width: 8rem;
+	margin: 2rem 0;
 }
 
-#extraCol img{
-    width:100px;
-    height:100px;
+.article{
+	padding: 10rem 4rem;
 }
-/*.col-xs-12{
-    height:100%;
-    background: transparent url("./assets/img/cover_photo.jpg") repeat fixed 0% 0% / cover
-}*/
 
-
-
-/*********** FONTS DEFINITION ************/
+/********************************************************/
+/*                                                      */
+/*                 FONTS AND STYLING                    */
+/*                                                      */
+/********************************************************/
 
 .ft-mainTitle {
-    text-align:right;
-    font-family:Anton;
-    color:black;
-    font-size:19rem;
+    text-align: right;
+    
+    font-family: Anton;
+    color: black;
+    font-size: 18rem;
 }
 
 .subTitle{
-    position:absolute;
-    padding:0rem 12rem;
-    bottom:20rem;
-    font-family:Anton;
-    color:black;
-    font-size:12rem;
+    position: absolute;
+    padding: 0rem 12rem;
+    bottom: 20rem;
+    
+    font-family: Anton;
+    color: black;
+    font-size: 12rem;
 }
 
 .column-title{
-    font-family:Lobster;
-    color:black;
-    font-size:36px;
+    font-family: Lobster;
+    color: black;
+    font-size: 9rem;
 }
 
 .mainColumn-title{
-    font-family:Raleway;
-    font-weight:bold;
-    color:red;
-    font-size:36px;
+	padding: 4rem 0;
+	
+    font-family: Raleway;
+    font-weight: bold;
+    color: red;
+    font-size: 9rem;
 }
 
 .mainColumn-content{
-    font-family:Georgia;
-    color:darkgrey;
-    font-size:36px;
+    font-family: Georgia;
+    color: darkgrey;
+    font-size: 9rem;
 }
 
 .sideColumn-title{
-    font-family:Raleway;
-    font-weight:bold;
-    color:red;
-    font-size:24px;
+    font-family: Raleway;
+    font-weight: bold;
+    color: red;
+    font-size: 6rem;
 }
 
 .sideColumn-content{
-    font-family:Georgia;
-    color:darkgrey;
-    font-size:24px;
+    font-family: Georgia;
+    color: darkgrey;
+    font-size: 6rem;
 }
 
 .extraColumn-title{
     font-family: Raleway;
-    font-weight:bold;
-    color:red;
-    font-size:20px;
+    font-weight: bold;
+    color: red;
+    font-size: 5rem;
 }
 
 .extraColumn-content{
-    font-family:Georgia;
-    color:darkgrey;
-    font-size:20px;
+    font-family: Georgia;
+    color: darkgrey;
+    font-size: 5rem;
 }
